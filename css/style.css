@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.first-section{
+    /* background-color: rgb(133, 133, 167); */
+}
+.first-section .navbar{
+    height: 7vh;
+    width: 100%;
+    background-image: linear-gradient(175deg,black,black,black,white);
+}
+.first-section .navbar ul{
+    display: flex;
+    justify-content: left;
+}
+.first-section .navbar ul li{
+    text-align: center;
+    list-style-type: none;
+    margin: 24px 0px;
+}
+.first-section .navbar ul li a{
+    text-decoration: none;
+    color: #AC74D2;
+    font-size: 17px;
+    margin: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.first-section .navbar ul li a span{
+    text-decoration: none;
+    color: aqua;
+    font-size: 25px;
+    margin: 0px 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+.first-section .navbar button{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    float: right;
+    position: relative;
+    top: -90%;
+    background-color: transparent;
+    /* width: 125px; */
+}
+.sign-in{
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+.sign-up{
+    margin: 0px 15px;
+    color: green;
+    border: 2px solid green;
+    border-radius: 4px;
+}
+@media (max-width :1024px){
+    
+}
+@media (max-width :768px){
+    .first-section .navbar ul li a{
+        font-size: 14px;
+        margin: 0px 5px;
+    }
+    .first-section .navbar ul li a span{
+        font-size: 20px;
+        margin: 0px 7px;
+    }
+    .first-section .navbar button{
+        font-size: 14px;
+        padding: 5px;
+        top: -80%;
+    }
+    .sign-in{
+        border: 1px solid blue;
+    }
+    .sign-up{
+        margin: 0px 10px;
+        border: 1px solid green;
+    }
+}
+@media (max-width:600px){
+    .first-section .navbar{
+        display: none;
+    }
+}
+
+/* end navbar */
+
+
+/* start slider */
+
+.slider{
+    width: 100%;
+    height: 93vh;
+    background-image: url(../images/dark1.jpg);
+    background-size: 100% 100%;
+    /* /////////// */
+    animation-name: changePicture;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes changePicture {
+    25%{
+        background-image: url(../images/dark2.jpg);
+    }
+    50%{
+        background-image: url(../images/dark3.jpg);
+    }
+    75%{
+        background-image: url(../images/dark2.jpg);
+    }
+    100%{
+        background-image: url(../images/dark1.jpg);
+    }
+}
+.slider .layout{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+}
+.slider .layout .layout_content{
+    position: absolute;
+    bottom: -5%;
+    left: 40%;
+}
+.slider .layout .layout_content h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.339);
+    color: aliceblue;
+}
+.slider .layout .layout_content p{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-shadow: 5px 5px 5px rgba(33, 33, 33, 0.339);
+    color: rgb(240, 248, 255);
+}
+
+@media (max-width :1024px){
+    .slider .navbar ul li{
+        padding: 5px 7px;
+        margin: 4px;
+    }    
+    .slider .navbar ul li a{
+        font-size: 22px;
+    }
+    .slider .layout .layout_content{
+        left: 33%;
+    }
+}
+@media (max-width :768px){
+    /* .slider .navbar ul li{
+        padding: 5px 7px;
+        margin: 4px;
+    } */ 
+    .slider .navbar ul li a{
+        font-size: 15px;
+    }
+    .slider .layout .layout_content{
+        left: 28%;
+    }
+}
+@media (max-width:600px){
+    .slider .navbar ul li{
+        float: none;
+    } 
+    .slider .navbar ul li a{
+        font-size: 18px;
+    }
+    .slider .layout .layout_content{
+        left: 20%;
+    }
+}
+
+/* end slider */
+
+.white-space{
+    width: 100%;
+    height: 50px;
+    color: aliceblue !important;
+}
+
+/* About Us section */
+
+.About h1{
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #AC74D2;
+}
+.About .line1{
+    width: 50%;
+    height: 5px;
+    margin: 0px auto 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(90deg,white,#AC74D2,white);
+    border-radius: 50px ; /*  no matter how i change this number, it just act weird */
+    margin-bottom: 20px;
+}
+.About .line2{
+    width: 40%;
+    height: 0px;
+    margin: 0px auto 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #AC74D2;
+    border-style: dotted;
+    margin-bottom: 20px;
+}
+.About .line3{
+    width: 30%;
+    height: 0px;
+    margin: 0px auto 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #AC74D2;
+    border-style: dotted;
+}
+.About .slider2{
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.About .slider2 .bird{
+    width: 40%;
+    height: 100%;
+    justify-content: left;
+}
+.About .slider2 .bird img{
+    width: 80%;
+    height: 90%;
+    background-size: 100% 100%;
+    left: 5%;
+    position: relative;
+}
+.About .slider2 .content{
+    width: 60%;
+    height: 100%;
+    /* text-align: center; */
+    justify-content: right;
+}
+.About .slider2 .content div h1{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.About .slider2 .content div p{
+    justify-content: right;
+    text-align: center;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*                     second slider */
+
+
+@media (max-width :1024px){
+
+}
+@media (max-width :768px){
+    .About .slider2 .bird img{
+        width: 70%;
+        height: 60%;
+        background-size: 100% 100%;
+        /* left: 5%;
+        position: relative; */
+    }
+    .About .slider2 .content div h1{
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+    .About .slider2 .content div p{
+        font-size: 12px;
+    }
+}
+@media (max-width:600px){
+    .About .slider2{
+        margin-top: 30px;
+        width: 100%;
+        height: 700px;
+        display: block;
+        /* justify-content: center; */
+    }
+    .About .slider2 .bird{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: left;
+        margin: auto;
+    }
+    .About .slider2 .bird img{
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        left: -0.5%;
+    }
+    .About .slider2 .content{
+        width: 100%;
+        height: 100%;
+        /* display: flex; */
+        /* justify-content: right; */
+        margin: 10px 0px;
+    }
+    .About .slider2 .content div h1{
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+    .About .slider2 .content div p{
+        justify-content: right;
+        text-align: center;
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+}
+
+/* end slider */
